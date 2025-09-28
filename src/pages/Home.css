@@ -1,0 +1,102 @@
+
+.badadiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+}
+
+.maincontainer{
+    margin-top: 20px;
+    height: 600px;
+    width: 85%;
+    background: #1a1a1a ;
+    border-radius: 30px;
+    display: flex;
+    color: white;
+
+}
+.leftdiv{
+    height: 100%; 
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightdiv{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000000;
+    color: white;
+    flex-direction: column;
+    padding: 20px; 
+}
+.rightdiv p {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;         /* spacing between lines */
+    text-align: center;         /* align left instead of center for modern look */
+    margin-bottom: 25px;      /* space between text and button */
+}
+
+
+
+.leftdiv img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 40px;     /* soft corners */
+    transform: rotate(0deg); /* subtle tilt */
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.8);
+    transition: transform 0.3s ease;
+}
+
+.leftdiv img:hover {
+    transform: scaleZ(1) scale(1.05);
+}
+
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #FF9933;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 140px;
+    color: black;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);  /* subtle shadow */
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+}
+
+
+@media (max-width: 768px) {
+    .maincontainer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .leftdiv, .rightdiv {
+        width: 100%;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}
